@@ -401,10 +401,7 @@
                                     <shadedPattern>${kusto.shade.prefix}.com.ctc.wstx</shadedPattern>
                                 </relocation>
                                 <!-- ORG -->
-                                <relocation>
-                                    <pattern>org.slf4j</pattern>
-                                    <shadedPattern>${kusto.shade.prefix}.org.slf4j</shadedPattern>
-                                </relocation>
+
                                 <relocation>
                                     <pattern>org.reactivestreams</pattern>
                                     <shadedPattern>${kusto.shade.prefix}.org.reactivestreams</shadedPattern>
@@ -572,6 +569,10 @@
                     <groupId>com.azure</groupId>
                     <artifactId>azure-identity</artifactId>
                 </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-simple</artifactId>
+                </exclusion>
             </exclusions>
         </dependency>
         <dependency>
@@ -587,6 +588,10 @@
                 <exclusion>
                     <groupId>com.azure</groupId>
                     <artifactId>azure-identity</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-simple</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
